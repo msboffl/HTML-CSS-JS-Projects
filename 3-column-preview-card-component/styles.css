@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700;800;900&family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap");
+body {
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  background: hsl(0, 0%, 95%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 825px;
+  width: 100%;
+}
+.container .colomn {
+  padding: 2.5rem;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+.container h2 {
+  font-family: "Big Shoulders Display";
+  font-weight: 700;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+}
+.container p {
+  font-size: 15px;
+  font-weight: 300;
+}
+.container button {
+  background-color: hsl(0, 0%, 95%);
+  border: none;
+  font-size: 0.855em;
+  margin-top: 3rem;
+  padding: 1em 2em;
+  border-radius: 25px;
+}
+.container .first__colomn {
+  background: hsl(31, 77%, 53%);
+  border-radius: 5px 0 0 5px;
+}
+.container .first__colomn button {
+  color: hsl(31, 77%, 53%);
+}
+.container .second__colomn {
+  background: hsl(184, 100%, 22%);
+}
+.container .second__colomn button {
+  color: hsl(184, 100%, 22%);
+}
+.container .third__colomn {
+  background: hsl(179, 100%, 13%);
+  border-radius: 0 5px 5px 0;
+}
+.container .third__colomn button {
+  color: hsl(179, 100%, 13%);
+}
+
+@media screen and (max-width: 450px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}/*# sourceMappingURL=styles.css.map */
